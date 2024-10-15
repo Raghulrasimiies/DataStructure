@@ -114,31 +114,28 @@ An array is a collection of elements of the same data type stored in contiguous 
 ### Example 1: C Program to Store and Display Array Elements
 ```c
 #include <stdio.h>
-int getting_arr_ele(int arr[]);
-void display_arr(int arr[], int len);
-
-int main() {
-    int arr[10];
-    int len = getting_arr_ele(arr);
-    display_arr(arr, len);
-    return 0;
+void getting_arr_ele(int arr[],int len);
+void display_arr(int arr[],int len);
+int main(){
+ int n;
+ printf("Enter the number of Array element : ");
+ scanf("%d",&n);
+ int arr[n];
+ getting_arr_ele(arr,n);
+ display_arr(arr,n);
+ return 0;
+}
+void getting_arr_ele(int arr[],int len){
+ for(int i = 0;i<len;i++){
+   scanf("%d",&arr[i]);
+ }
+}
+void display_arr(int arr[],int len){
+ for(int i = 0;i<len;i++){
+ printf("%d ",arr[i]);
+ }
 }
 
-int getting_arr_ele(int arr[]) {
-    int n;
-    printf("Enter the number of Array elements: ");
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-    return n;
-}
-
-void display_arr(int arr[], int len) {
-    for (int i = 0; i < len; i++) {
-        printf("%d ", arr[i]);
-    }
-}
 ```
 
 ### Example 2: Find Leaders in an Array
@@ -152,28 +149,29 @@ void display_arr(int arr[], int len) {
 
 ```c
 #include <stdio.h>
-void lea_in_arr(int arr[], int len);
-
-int main() {
-    int arr[10], n;
-    printf("Enter the number of Array elements: ");
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+void lea_in_arr(int arr[],int len);
+int main(){
+  int n;
+  printf("Enter the number of Array element : ");
+  scanf("%d",&n);
+  int arr[10];
+  for(int i = 0;i<n;i++){
+    scanf("%d",&arr[i]);
+  }
+  lea_in_arr(arr,n);
+  return 0;
+}
+void lea_in_arr(int arr[],int len){
+  int max = arr[len-1];
+  printf("%d ",max);
+  for(int i = len-2;i>=0;i--){
+    if( arr[i] > max){
+      printf("%d ",arr[i]);
+      max=arr[i];
     }
-    lea_in_arr(arr, n);
-    return 0;
+  }
 }
 
-void lea_in_arr(int arr[], int len) {
-    int max = arr[len - 1];
-    for (int i = len - 1; i >= 0; i--) {
-        if (max <= arr[i]) {
-            printf("%d ", arr[i]);
-            max = arr[i];
-        }
-    }
-}
 ```
 
 ---
