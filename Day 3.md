@@ -19,6 +19,7 @@ A linear data structure consisting of nodes, each containing data and a referenc
   2. **Link:** A pointer/reference to the next node in the list.
 - A head pointer points to the first node of the list.
 - The last node's link is NULL, indicating the end of the list.
+![Singly Linked List](https://media.geeksforgeeks.org/wp-content/uploads/20220712172013/Singlelinkedlist.png)
 
 **Common Operations in SLL**
 1. `insertfront`: Adds a new node at the beginning of the list.
