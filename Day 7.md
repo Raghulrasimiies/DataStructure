@@ -237,3 +237,16 @@ int main() {
 }
 ```
 
+## Assignment Questions :
+
+1. **How is memory allocated for nodes in a linked list?**
+   
+2. **What are some real-world applications of linked lists?**
+
+3. **What is the difference between a singly linked list (SLL) and a doubly linked list (DLL)?**
+
+4. **How does a circular linked list (CLL) differ from a regular linked list?**
+
+5. **Implement a function to merge two sorted linked lists into one sorted list.**
+
+6. **Write a program to find the node where two singly linked lists intersect.**
