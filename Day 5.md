@@ -11,8 +11,10 @@ A doubly linked list is a data structure where each element is referred to as a 
 - The **head pointer** points to the first node in the list.
 - The `plink` of the first node is set to `NULL`, indicating there is no previous node.
 - The `nlink` of the last node is set to `NULL`, indicating there is no subsequent node.
-
+![Node](images/img4.jpg)
+## Double Linked List:
 ![Double Linked List](images/img1.jpg)
+
 ### Node Structure Definition
 
 The structure of a node in a doubly linked list is defined as follows:
