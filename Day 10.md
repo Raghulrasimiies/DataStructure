@@ -220,3 +220,30 @@ int main(){
 }
 
 ```
+## Assignment
+
+1. What is a stack, and how does it differ from other data structures? 
+
+2. Explain the LIFO principle in the context of stacks.
+
+3. What are the primary operations of a stack, and how do they work?
+
+4. Describe a few real-world examples where stacks are used.
+
+5. Write a program to implement a stack using an array in C.
+
+6. How do you implement a stack using a linked list in C?
+
+7. What are the advantages and disadvantages of array-based and linked list-based stacks?
+
+8. How would you handle stack overflow and underflow conditions in code?
+
+9. Write a function to check if a stack is empty or full.
+
+10. How could you dynamically resize an array-based stack if it reaches capacity?
+
+11. Write a program to reverse a string using a stack.
+
+12. What is stack overflow, and how can we prevent it?
+
+13. Describe how stack frames work when a function is called, including local variable storage, function parameters, and the return address.
